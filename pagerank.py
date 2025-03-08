@@ -137,7 +137,4 @@ if __name__ == "__main__":
     larger_result = pagerank(larger_graph)
     visualize_pagerank(larger_graph, larger_result)
     
-    # Print larger example values
-    print("\nLarger graph PageRank values:")
-    for i, value in enumerate(larger_result):
-        print(f"Page {i}: {value:.3f}")
+    
