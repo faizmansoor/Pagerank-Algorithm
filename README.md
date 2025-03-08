@@ -33,7 +33,7 @@ PageRank can be computed using two main approaches:
 ### **Formula:**
 
 \[
-PR*{t+1}(i) = \sum*{j \in B_i} \frac{PR_t(j)}{C(j)}
+PR_{t+1}(i) = sum_{j in B_i} (PR_t(j) / C(j))
 \]
 
 Where:
@@ -76,7 +76,7 @@ To **prevent dead ends** (pages with no outgoing links) and **spider traps** (lo
 ### **Final PageRank Formula:**
 
 \[
-PageRank = d \cdot M' \cdot PageRank + (1 - d) \cdot v
+PageRank = d * M' * PageRank + (1 - d) * v
 \]
 
 Where:
@@ -97,23 +97,23 @@ Where:
 
 To run the Python implementation:
 
+``bash
 python pagerank.py
+``
 
 ---
 
 ## **Dependencies**
 
 To run the code, ensure you have the following Python libraries installed:
+- `numpy`
+- `networkx`
+- `matplotlib`
 
-- numpy
-
-- networkx
-
-- matplotlib
-
-**You can install them using:**
-
+You can install them using:
+```bash
 pip install numpy networkx matplotlib
+```
 
 ---
 
