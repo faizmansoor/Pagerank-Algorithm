@@ -97,9 +97,9 @@ Where:
 
 To run the Python implementation:
 
-``bash
+```bash
 python pagerank.py
-``
+```
 
 ---
 
